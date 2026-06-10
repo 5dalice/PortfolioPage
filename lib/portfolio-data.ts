@@ -78,22 +78,7 @@ export const portfolioData: SearchResult[] = [
       "A weather application that fetches real-time weather data from a free public API. The project includes city-based search, current temperature, humidity, wind speed, and a responsive interface built with React, TypeScript, and Next.js.",
     category: "projects",
   },
-  {
-    id: "proj-2",
-    title: "CodeSnippets - Developer Tool",
-    url: "aliceewaldsen.dev/projects/codesnippets",
-    description:
-      "A code snippet manager with syntax highlighting, tagging, and search functionality. Planned as a developer productivity tool for organizing reusable code examples across multiple programming languages.",
-    category: "projects",
-  },
-  {
-    id: "proj-3",
-    title: "BudgetBuddy - Finance Tracker",
-    url: "aliceewaldsen.dev/projects/budgetbuddy",
-    description:
-      "A personal finance tracker concept focused on expense tracking, budget goals, and visual analytics. Planned with secure authentication, structured data handling, and user-focused design.",
-    category: "projects",
-  },
+
 
   // Writing
   {
