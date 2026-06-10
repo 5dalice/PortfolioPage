@@ -9,15 +9,15 @@ export function GoogleLogo({ size = "large" }: GoogleLogoProps) {
     { char: "i", color: "#fbbc05" }, // gul
     { char: "c", color: "#4285f4" }, // blå
     { char: "e", color: "#34a853" }, // grön
-    { char: " ", color: "transparent" },
-    { char: "E", color: "#4285f4" }, // blå
-    { char: "w", color: "#ea4335" }, // röd
-    { char: "a", color: "#fbbc05" }, // gul
-    { char: "l", color: "#4285f4" }, // blå
-    { char: "d", color: "#34a853" }, // grön
-    { char: "s", color: "#ea4335" }, // röd
-    { char: "e", color: "#fbbc05" }, // gul
-    { char: "n", color: "#4285f4" }, // blå
+  // { char: " ", color: "transparent" },
+  // { char: "E", color: "#4285f4" }, // blå
+  // { char: "w", color: "#ea4335" }, // röd
+  // { char: "a", color: "#fbbc05" }, // gul
+  //  { char: "l", color: "#4285f4" }, // blå
+  //  { char: "d", color: "#34a853" }, // grön
+  //  { char: "s", color: "#ea4335" }, // röd
+  //  { char: "e", color: "#fbbc05" }, // gul
+  //  { char: "n", color: "#4285f4" }, // blå
   ];
 
   const fontSize = size === "large" ? "text-[92px]" : "text-[28px]"

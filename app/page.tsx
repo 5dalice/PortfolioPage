@@ -33,7 +33,6 @@ export default function HomePage() {
 
       {/* Footer - classic Google footer */}
       <footer className="bg-[#f2f2f2] text-[13px] mt-auto">
-        <div className="px-6 py-2 border-b border-[#dadce0] text-[#70757a]">India</div>
         <div className="px-6 py-2 flex flex-col sm:flex-row justify-between gap-2">
           <div className="flex flex-wrap gap-6 text-[#70757a]">
             <a href="#" className="hover:underline">

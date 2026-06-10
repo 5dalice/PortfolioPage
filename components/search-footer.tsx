@@ -18,13 +18,15 @@ export function SearchFooter({ query }: SearchFooterProps) {
       {/* Gooooogle Pagination */}
       <div className="flex items-center justify-center py-4">
         <span style={{ fontFamily: "'Times New Roman', serif", fontSize: "28px" }}>
-          <span style={{ color: "#4285f4" }}>A</span>
-          <span style={{ color: "#ea4335" }}>l</span>
-          <span style={{ color: "#fbbc05" }}>i</span>
-          <span style={{ color: "#4285f4" }}>i</span>
-          <span style={{ color: "#34a853" }}>i</span>
-          <span style={{ color: "#ea4335" }}>c</span>
-          <span style={{ color: "#4285f4" }}>e</span>
+    <span style={{ color: "#4285f4" }}>A</span>
+<span style={{ color: "#ea4335" }}>l</span>
+<span style={{ color: "#fbbc05" }}>i</span>
+<span style={{ color: "#4285f4" }}>i</span>
+<span style={{ color: "#34a853" }}>i</span>
+<span style={{ color: "#ea4335" }}>i</span>
+<span style={{ color: "#4285f4" }}>i</span>
+<span style={{ color: "#ea4335" }}>c</span>
+<span style={{ color: "#4285f4" }}>e</span>
         </span>
       </div>
       {/* Page Numbers */}
