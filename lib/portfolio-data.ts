@@ -71,6 +71,7 @@ export const portfolioData: SearchResult[] = [
   // Projects
 {
 
+{
   id: "proj-1",
 
   title: "Mini Network IDS MVP",
@@ -79,9 +80,11 @@ export const portfolioData: SearchResult[] = [
 
   href: "https://github.com/5dalice/Mini-Network-IDS-MVP",
 
- description:
-  "A Python-based Network Intrusion Detection System (IDS) that analyzes PCAP traffic and detects threats such as port scans, SYN flood attacks, malicious DNS activity, and packet anomalies. The project includes threat intelligence integration, SQLite storage, reporting, and a Flask dashboard."
- 
+  description:
+    "A Python-based network detection platform featuring PCAP analysis, Sigma rules, MITRE ATT&CK mapping, threat scoring, incident correlation, and a web dashboard.",
+
+  category: "projects",
+}
 , 
 category: "projects",
 
