@@ -83,7 +83,7 @@ export const portfolioData: SearchResult[] = [
   // Writing
   {
     id: "blog-1",
-    title: "Master's Thesis: Security is not Carbon-Free",
+    title: "Master's Thesis: Security is not Carbon-Free (2026)",
     url:"",
     description:
       "Research on sustainable cybersecurity that investigates how Wi-Fi Intrusion Detection Systems affect energy consumption and carbon emissions. The study compares static, adaptive, and hybrid IDS approaches through simulation-based experiments, analyzing the balance between detection performance, resource usage, and environmental impact.",
@@ -91,7 +91,7 @@ export const portfolioData: SearchResult[] = [
   },
   {
     id: "blog-2",
-    title: "Bachelor's Thesis: Trust in AI in Recruitment",
+    title: "Bachelor's Thesis: Trust in AI in Recruitment - (2025)",
     url: "http://www.diva-portal.org/smash/record.jsf?pid=diva2:1971051",
     description:
       "Bachelor's thesis in Information Systems exploring recruiters' trust in AI-powered screening tools. Based on qualitative interviews with recruiters from both public and private sectors, the study investigates the factors influencing AI adoption, including transparency, explainability, perceived reliability, ethical concerns, and user acceptance.",
