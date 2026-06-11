@@ -11,7 +11,7 @@ export const portfolioData: SearchResult[] = [
   {
     id: "about-1",
     title: "About Me - Alice Ewaldsen | Cybersecurity & Software Development",
-    url: "aliceewaldsen.dev/about",
+    url: "aliceewaldsen.com/about",
     description:
       "System developer with a multidisciplinary background spanning technology, leadership, and business operations. Driven by problem-solving, continuous learning, and the development of efficient solutions that create long-term value for both organizations and users.",
     category: "about",
@@ -19,7 +19,7 @@ export const portfolioData: SearchResult[] = [
   {
     id: "about-2",
     title: "Technical Skills & Technologies",
-    url: "aliceewaldsen.dev/about/skills",
+    url: "aliceewaldsen.com/about/skills",
     description:
       "Proficient in C#, .NET, Java, Python, SQL, MongoDB, JavaScript, TypeScript, React, Linux, Git, REST APIs, and database modeling. Experienced with system integration, TCP/IP networking, cloud environments, and agile development practices including Scrum and Kanban.",
     category: "about",
@@ -27,7 +27,7 @@ export const portfolioData: SearchResult[] = [
   {
     id: "about-3",
     title: "Education & Academic Background",
-    url: "aliceewaldsen.dev/about/education",
+    url: "aliceewaldsen.com/about/education",
     description:
       "Holds a B.Sc. in Systems Development and an M.Sc. in Cybersecurity from University West. Specialized in penetration testing, digital forensics, cloud security, AI-assisted risk assessment, and sustainable computing. Research includes studies on trust in AI-driven recruitment and the environmental impact of intrusion detection systems.",
     category: "about",
@@ -37,7 +37,7 @@ export const portfolioData: SearchResult[] = [
   {
     id: "work-0",
     title: "404: Employer Not Found (2026–?)",
-    url: "aliceewaldsen.dev/contact",
+    url: "aliceewaldsen.com/contact",
     href: "mailto:alice.ewaldsen@hotmail.com",
     description:
       "The requested employer could not be found. If you are hiring a software developer with a master's degree in cybersecurity, please try again via the Contact section.",
@@ -46,7 +46,7 @@ export const portfolioData: SearchResult[] = [
   {
     id: "work-1",
     title: "Sales Associate at Indiska (2024–Present)",
-    url: "aliceewaldsen.dev/experience/indiska",
+    url: "aliceewaldsen.com/experience/indiska",
     description:
       "Working with customer engagement and sales in a target-driven environment. Developed strong analytical and communication skills by identifying customer needs and translating them into practical solutions. Also responsible for digital merchandising, social media content, and information presentation.",
     category: "experience",
@@ -54,7 +54,7 @@ export const portfolioData: SearchResult[] = [
   {
     id: "work-2",
     title: "Team Leader at Willys (2019–2024)",
-    url: "aliceewaldsen.dev/experience/willys",
+    url: "aliceewaldsen.com/experience/willys",
     description:
       "Managed daily operations in a fast-paced retail environment, including workforce planning, resource allocation, and onboarding of new employees. Strengthened leadership, decision-making, and problem-solving skills while contributing to regional and national sales competition successes.",
     category: "experience",
@@ -62,7 +62,7 @@ export const portfolioData: SearchResult[] = [
   {
     id: "work-3",
     title: "Production Operator at Volvo Cars (2017–2019)",
-    url: "aliceewaldsen.dev/experience/volvo-cars",
+    url: "aliceewaldsen.com/experience/volvo-cars",
     description:
       "Worked in automotive production with a strong focus on quality assurance, precision, and standardized processes. Developed a structured and methodical approach to work, gaining valuable experience in process optimization, teamwork, and quality control.",
     category: "experience",
@@ -72,13 +72,21 @@ export const portfolioData: SearchResult[] = [
   {
     id: "proj-1",
     title: "Weather App - Real-Time Weather Dashboard",
-    url: "aliceewaldsen.dev/projects/weather-app",
+    url: "aliceewaldsen.com/projects/weather-app",
     href: "/projects/weather-app",
     description:
       "A weather application that fetches real-time weather data from a free public API. The project includes city-based search, current temperature, humidity, wind speed, and a responsive interface built with React, TypeScript, and Next.js.",
     category: "projects",
   },
-
+{
+  id: "proj-2",
+  title: "Astrology Page - My First Astro Page",
+  url: "github.com/A5dalice/myFirstAstroPage",
+  href: "https://github.com/5dalice/myFirstAstroPage",
+  description:
+    "An astrology web application built with ASP.NET Core MVC, C#, SQLite, HTML and CSS. The project includes horoscope functionality, database integration and responsive user interface design.",
+  category: "projects",
+},
 
   // Writing
   {
