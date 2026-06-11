@@ -23,8 +23,8 @@ export default async function DetailPage({ params }: DetailPageProps) {
     <div className="min-h-screen bg-white text-black flex flex-col">
       <SearchHeader query={item.category} />
 
-<main className="flex-1 py-8">
-  <section className="max-w-[652px] px-6 md:ml-[180px] md:px-0">
+<main className="flex-1 py-4 px-4 md:pl-[180px] md:pr-6">
+  <section className="max-w-[652px]">
     <article className="max-w-[600px] mb-6">
       <cite className="text-[14px] text-[#006621] not-italic block mb-1">
         {item.url}

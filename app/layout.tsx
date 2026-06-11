@@ -4,16 +4,15 @@ import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Alice Ewaldsen - Portfolio Search",
+  title: "Alice Ewaldsen - Software Development & Cybersecurity Portfolio",
   description:
-    "Search my portfolio. Find about, projects, experience, experiments, writing, and contact info.",
+    "Portfolio for Alice Ewaldsen, focused on software development, cybersecurity, projects, academic work, experience, and contact information.",
   generator: "v0.app",
   icons: {
     icon: [
       {
         url: "/icon-dark-32x32.png",
         media: "(prefers-color-scheme: light)",
-        // :/
       },
       {
         url: "/icon-dark-32x32.png",

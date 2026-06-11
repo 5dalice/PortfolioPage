@@ -5,7 +5,7 @@ export default function HomePage() {
   return (
     <div className="h-screen w-full bg-white flex flex-col m-0 p-0 overflow-hidden">
       {/* Header Links - classic Google style */}
-      <header className="flex justify-end items-center gap-4 px-4 py-2 text-[13px]">
+     <header className="flex justify-end items-center gap-3 sm:gap-4 px-4 py-2 text-[13px]">
         <a href="#" className="text-[#1a0dab] hover:underline">
           Gmail
         </a>
@@ -22,18 +22,18 @@ export default function HomePage() {
       <main className="flex-1 flex flex-col items-center justify-center px-4">
         <GoogleLogo size="large" />
 
-        <div className="mt-6 w-full max-w-[584px]">
+        <div className="mt-6 w-full max-w-[584px] px-2 sm:px-0">
           <SearchBar autoFocus />
         </div>
 
         {/* Subtitle */}
-        <p className="mt-6 text-[13px] text-[#545454]">
+        <p className="mt-6 text-center text-[13px] text-[#545454] px-4">
           Search: about, projects, experience, writings        </p>
       </main>
 
       {/* Footer - classic Google footer */}
-      <footer className="bg-[#f2f2f2] text-[13px] mt-auto">
-        <div className="px-6 py-2 flex flex-col sm:flex-row justify-between gap-2">
+   <footer className="bg-[#f2f2f2] text-[13px] mt-auto border-t border-[#dadce0]">
+    <div className="px-4 sm:px-6 py-3 flex flex-col sm:flex-row justify-between gap-3">
           <div className="flex flex-wrap gap-6 text-[#70757a]">
             <a href="#" className="hover:underline">
               Advertising

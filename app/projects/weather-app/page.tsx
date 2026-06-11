@@ -229,7 +229,7 @@ export default function WeatherAppPage() {
       <SearchHeader query="weather app" />
 
       <main className="flex-1 py-8">
-        <section className="pl-[180px] pr-6">
+        <section className="px-4 md:pl-[180px] md:pr-6">
           <article className="max-w-[600px] mb-6">
             <cite className="text-[14px] text-[#006621] not-italic block mb-1">
               aliceewaldsen.dev/projects/weather-app
@@ -308,7 +308,7 @@ export default function WeatherAppPage() {
                   Loading city forecasts...
                 </p>
               ) : (
-                <div className="flex flex-wrap gap-6 mt-8">
+                <div className="grid grid-cols-2 gap-3 mt-8 sm:grid-cols-3 lg:grid-cols-6">
                   {cityForecasts.map((item) => {
                     const currentCode = item.weatherCode[0]
                     const currentTemp = Math.round(item.maxTemp[0])
@@ -321,29 +321,29 @@ export default function WeatherAppPage() {
                           setCity(item.city)
                           handleSearch(item.city)
                         }}
-                        className="group w-[170px] text-left border border-[#dadce0] bg-[#fafafa] hover:bg-[#f8f9fa] hover:border-[#c6c6c6] hover:shadow-sm transition-all"
+                        className="group w-full min-w-0 text-left border border-[#dadce0] bg-[#fafafa] hover:bg-[#f8f9fa] hover:border-[#c6c6c6] hover:shadow-sm transition-all"
                       >
                         <div
-                          className="p-4 border-b border-[#ebebeb]"
+                          className="p-3 sm:p-4 border-b border-[#ebebeb]"
                           style={{
                             background:
                               "linear-gradient(to bottom, #f5f5f5 0%, #f1f1f1 100%)",
                           }}
                         >
-                          <p className="text-[14px] font-bold text-black">
+                          <p className="truncate text-[14px] font-bold text-black">
                             {item.city}
                           </p>
-                          <p className="text-[12px] text-[#70757a] mt-0.5">
+                          <p className="truncate text-[12px] text-[#70757a] mt-0.5">
                             {item.country}
                           </p>
 
-                          <p className="mt-4 text-[28px] leading-none text-[#d93025]">
+                          <p className="mt-4 text-[24px] sm:text-[28px] leading-none text-[#d93025]">
                             {Number.isFinite(currentTemp)
                               ? `${currentTemp}°`
                               : "N/A"}
                           </p>
 
-                          <p className="mt-2 text-[12px] text-[#545454]">
+                          <p className="mt-2 truncate text-[12px] text-[#545454]">
                             {getWeatherIcon(currentCode)}{" "}
                             {getWeatherDescription(currentCode)}
                           </p>
@@ -356,17 +356,17 @@ export default function WeatherAppPage() {
                             return (
                               <div
                                 key={day}
-                                className="px-2 py-3 border-r border-[#ebebeb] last:border-r-0"
+                                className="px-1.5 py-3 border-r border-[#ebebeb] last:border-r-0"
                               >
                                 <p className="text-[11px] text-[#70757a] mb-1">
                                   {formatShortDay(day)}
                                 </p>
-                                <p className="text-[18px] leading-none">
+                                <p className="text-[17px] leading-none">
                                   {getWeatherIcon(
                                     item.weatherCode[forecastIndex],
                                   )}
                                 </p>
-                                <p className="text-[12px] text-[#d93025] mt-1">
+                                <p className="text-[11px] text-[#d93025] mt-1">
                                   {Math.round(item.maxTemp[forecastIndex])}°
                                 </p>
                               </div>
@@ -395,28 +395,28 @@ export default function WeatherAppPage() {
                 Current conditions and daily forecast displayed as weather cards.
               </p>
 
-              <div className="flex flex-wrap gap-6 mt-8">
+              <div className="grid grid-cols-2 gap-3 mt-8 sm:grid-cols-3 xl:grid-cols-7">
                 {weather.daily.time.map((day, index) => (
                   <article
                     key={day}
-                    className="w-[170px] text-left border border-[#dadce0] bg-[#fafafa]"
+                    className="w-full min-w-0 text-left border border-[#dadce0] bg-[#fafafa]"
                   >
                     <div
-                      className="p-4 border-b border-[#ebebeb]"
+                      className="p-3 sm:p-4 border-b border-[#ebebeb]"
                       style={{
                         background:
                           "linear-gradient(to bottom, #f5f5f5 0%, #f1f1f1 100%)",
                       }}
                     >
-                      <p className="text-[14px] font-bold text-black">
+                      <p className="truncate text-[13px] font-bold text-black">
                         {formatDate(day)}
                       </p>
 
-                      <p className="mt-4 text-[28px] leading-none text-[#d93025]">
+                      <p className="mt-4 text-[24px] sm:text-[28px] leading-none text-[#d93025]">
                         {weather.daily?.temperature_2m_max?.[index] ?? "N/A"}°
                       </p>
 
-                      <p className="mt-2 text-[12px] text-[#545454]">
+                      <p className="mt-2 truncate text-[12px] text-[#545454]">
                         {getWeatherIcon(weather.daily?.weather_code?.[index])}{" "}
                         {getWeatherDescription(
                           weather.daily?.weather_code?.[index],
@@ -424,7 +424,7 @@ export default function WeatherAppPage() {
                       </p>
                     </div>
 
-                    <div className="p-4 text-[12px] text-[#545454] leading-[1.6] bg-white">
+                    <div className="p-3 text-[11px] sm:text-[12px] text-[#545454] leading-[1.6] bg-white">
                       <p>
                         <strong className="text-black">Min:</strong>{" "}
                         {weather.daily?.temperature_2m_min?.[index] ?? "N/A"}°C
@@ -437,11 +437,11 @@ export default function WeatherAppPage() {
                         <strong className="text-black">Rain:</strong>{" "}
                         {weather.daily?.precipitation_sum?.[index] ?? "N/A"} mm
                       </p>
-                      <p>
+                      <p className="truncate">
                         <strong className="text-black">Sunrise:</strong>{" "}
                         {formatTime(weather.daily?.sunrise?.[index])}
                       </p>
-                      <p>
+                      <p className="truncate">
                         <strong className="text-black">Sunset:</strong>{" "}
                         {formatTime(weather.daily?.sunset?.[index])}
                       </p>
