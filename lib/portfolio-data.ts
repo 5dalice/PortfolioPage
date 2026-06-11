@@ -100,7 +100,7 @@ export const portfolioData: SearchResult[] = [
   // Writing
   {
     id: "blog-1",
-    title: "Master's Thesis: Security is not Carbon-Free (2026)",
+    title: "Master's Thesis: Security is not Carbon-Free - (2026)",
     url:"",
     description:
       "Research on sustainable cybersecurity that investigates how Wi-Fi Intrusion Detection Systems affect energy consumption and carbon emissions. The study compares static, adaptive, and hybrid IDS approaches through simulation-based experiments, analyzing the balance between detection performance, resource usage, and environmental impact.",
