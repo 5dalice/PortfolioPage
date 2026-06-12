@@ -13,24 +13,25 @@ export const portfolioData: SearchResult[] = [
     title: "About Me - Alice Ewaldsen | Cybersecurity & Software Development",
     url: "aliceewaldsen.com/about",
     description:
-      "System developer with a multidisciplinary background spanning technology, leadership, and business operations. Driven by problem-solving, continuous learning, and the development of efficient solutions that create long-term value for both organizations and users.",
-    category: "about",
+      "System developer with a multidisciplinary background spanning technology, cybersecurity, leadership, and commercial operations. With experience in both technical and customer-oriented environments, I bring a combination of analytical thinking, business understanding, and a user-centered approach to building secure and effective digital solutions.", category: "about",
   },
   {
     id: "about-2",
     title: "Technical Skills & Technologies",
     url: "aliceewaldsen.com/about/skills",
     description:
-      "Proficient in C#, .NET, Java, Python, SQL, MongoDB, JavaScript, TypeScript, React, Linux, Git, REST APIs, and database modeling. Experienced with system integration, TCP/IP networking, cloud environments, and agile development practices including Scrum and Kanban.",
-    category: "about",
+      "Experienced in building web applications, designing databases, and developing software using modern programming languages and frameworks. Skilled in system integration, API development, network analysis, and cloud-based environments, with practical experience in Linux, Git, and agile development. Academic specialization in cybersecurity, covering penetration testing, digital forensics, information security, and AI-assisted risk analysis."
+ , 
+ category: "about",
   },
   {
     id: "about-3",
     title: "Education & Academic Background",
     url: "aliceewaldsen.com/about/education",
     description:
-      "Holds a B.Sc. in Systems Development and an M.Sc. in Cybersecurity from University West. Specialized in penetration testing, digital forensics, cloud security, AI-assisted risk assessment, and sustainable computing. Research includes studies on trust in AI-driven recruitment and the environmental impact of intrusion detection systems.",
-    category: "about",
+      "Holds a B.Sc. in Systems Development and an M.Sc. in Cybersecurity from University West. Academic specialization includes information security, penetration testing, digital forensics, cloud security, and AI-assisted risk assessment. Research projects have explored topics such as trust in AI-driven recruitment, sustainable computing, and the environmental impact of cybersecurity technologies."
+, 
+ category: "about",
   },
 
   // Experience

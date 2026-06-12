@@ -13,8 +13,7 @@ export function SearchFooter({ query }: SearchFooterProps) {
     "about",
     "projects",
     "experience",
-    "experiments",
-    "writing",
+      "writings",
     "contact",
   ].filter((term) => term !== query.toLowerCase())
 

@@ -57,20 +57,7 @@ export default async function DetailPage({ params }: DetailPageProps) {
 function DetailContent({ item }: { item: (typeof portfolioData)[0] }) {
   const categoryContent: Record<string, React.ReactNode> = {
     about: (
-      <div className="space-y-6">
-        <section>
-          <h2 className="text-[18px] font-medium text-black mb-3 border-b border-[#ebebeb] pb-2">
-            Overview
-          </h2>
-          <p className="text-[14px] text-[#3c4043] leading-relaxed">
-            I combine a background in software development with a Master's degree
-            in Cybersecurity. My focus is on building secure, reliable, and
-            user-oriented digital solutions, with experience across programming,
-            databases, system integration, cloud security, network analysis, and
-            information security.
-          </p>
-        </section>
-
+    
         <section>
           <h2 className="text-[18px] font-medium text-black mb-3 border-b border-[#ebebeb] pb-2">
             Tech Stack
@@ -94,16 +81,15 @@ function DetailContent({ item }: { item: (typeof portfolioData)[0] }) {
               "Digital Forensics",
               "Cloud Security",
             ].map((tech) => (
-              <span
-                key={tech}
-                className="px-3 py-1 bg-white border border-[#dadce0] text-[13px] text-[#3c4043]"
-              >
-                {tech}
-              </span>
+             <span
+  key={tech}
+  className="px-3 py-1 bg-[#f1f3f4] border border-[#e8eaed] text-[13px] text-[#202124]"
+>
+  {tech}
+</span>
             ))}
           </div>
         </section>
-      </div>
     ),
 
     projects: (
