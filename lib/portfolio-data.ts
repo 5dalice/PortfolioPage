@@ -70,15 +70,15 @@ export const portfolioData: SearchResult[] = [
 
   // Projects
   // Projects
-  {
-    id: "proj-1",
-    title: "Mini Network IDS MVP",
-    url: "https://github.com/5dalice/Mini-Network-IDS-MVP",
-    href: "https://github.com/5dalice/Mini-Network-IDS-MVP",
-    description:
-      "A Python-based network detection platform featuring PCAP analysis, Sigma rules, MITRE ATT&CK mapping, threat scoring, incident correlation, and a web dashboard.",
-    category: "projects",
-  },
+{
+  id: "proj-1",
+  title: "Mini Network IDS MVP",
+  url: "https://github.com/5dalice/Mini-Network-IDS-MVP",
+  href: "/projects/mini-ids",
+  description:
+    "A Python-based network detection platform featuring PCAP analysis, Sigma rules, MITRE ATT&CK mapping, threat scoring, incident correlation, and a web dashboard.",
+  category: "projects",
+},
   {
     id: "proj-2",
     title: "Portfolio Page",
