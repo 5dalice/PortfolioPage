@@ -69,78 +69,43 @@ export const portfolioData: SearchResult[] = [
   },
 
   // Projects
-{
-
-{
-  id: "proj-1",
-
-  title: "Mini Network IDS MVP",
-
-  url: "https://github.com/5dalice/Mini-Network-IDS-MVP",
-
-  href: "https://github.com/5dalice/Mini-Network-IDS-MVP",
-
-  description:
-    "A Python-based network detection platform featuring PCAP analysis, Sigma rules, MITRE ATT&CK mapping, threat scoring, incident correlation, and a web dashboard.",
-
-  category: "projects",
-}
-, 
-category: "projects",
-
-},{
-
-  id: "proj-2",
-
-  title: "Portfolio Page",
-
-  url: "https://github.com/5dalice/PortfolioPage",
-
-  href: "https://github.com/5dalice/PortfolioPage",
-
-  description:
-
-    "A developer portfolio page built with React, TypeScript and Next.js. The project features component-based architecture, dynamic project rendering, responsive layouts, client-side navigation and optimized performance through modern frontend development practices.",
-
-  category: "projects",
-
-},
-
-{
-
-  id: "proj-3",
-
-  title: "Weather App - Real-Time Weather Dashboard",
-
-  url: "aliceewaldsen.com/projects/weather-app",
-
-  href: "/projects/weather-app",
-
-  description:
-
-    "A weather application that fetches real-time weather data from a free public API. The project includes city-based search, current temperature, humidity, wind speed, and a responsive interface built with React, TypeScript, and Next.js.",
-
-  category: "projects",
-
-},
-
-{
-
-  id: "proj-4",
-
-  title: "Astrology Page",
-
-  url: "https://github.com/5dalice/myFirstAstroPage",
-
-  href: "https://github.com/5dalice/myFirstAstroPage",
-
-  description:
-
-    "An astrology web application built with ASP.NET Core MVC, C#, SQLite, HTML and CSS. The project includes horoscope functionality, database integration and responsive user interface design.",
-
-  category: "projects",
-
-},
+  // Projects
+  {
+    id: "proj-1",
+    title: "Mini Network IDS MVP",
+    url: "https://github.com/5dalice/Mini-Network-IDS-MVP",
+    href: "https://github.com/5dalice/Mini-Network-IDS-MVP",
+    description:
+      "A Python-based network detection platform featuring PCAP analysis, Sigma rules, MITRE ATT&CK mapping, threat scoring, incident correlation, and a web dashboard.",
+    category: "projects",
+  },
+  {
+    id: "proj-2",
+    title: "Portfolio Page",
+    url: "https://github.com/5dalice/PortfolioPage",
+    href: "https://github.com/5dalice/PortfolioPage",
+    description:
+      "A developer portfolio page built with React, TypeScript and Next.js. The project features component-based architecture, dynamic project rendering, responsive layouts, client-side navigation and optimized performance through modern frontend development practices.",
+    category: "projects",
+  },
+  {
+    id: "proj-3",
+    title: "Weather App - Real-Time Weather Dashboard",
+    url: "aliceewaldsen.com/projects/weather-app",
+    href: "/projects/weather-app",
+    description:
+      "A weather application that fetches real-time weather data from a free public API. The project includes city-based search, current temperature, humidity, wind speed, and a responsive interface built with React, TypeScript, and Next.js.",
+    category: "projects",
+  },
+  {
+    id: "proj-4",
+    title: "Astrology Page",
+    url: "https://github.com/5dalice/myFirstAstroPage",
+    href: "https://github.com/5dalice/myFirstAstroPage",
+    description:
+      "An astrology web application built with ASP.NET Core MVC, C#, SQLite, HTML and CSS. The project includes horoscope functionality, database integration and responsive user interface design.",
+    category: "projects",
+  },
   // Writing
   {
     id: "blog-1",
