@@ -1,0 +1,173 @@
+{
+  "summary": {
+    "total": 7,
+    "high": 4,
+    "medium": 2,
+    "low": 1
+  },
+  "alerts": [
+    {
+      "timestamp": "2024-06-10T12:00:20+00:00",
+      "alert_type": "PORT_SCAN",
+      "display_name": "Port Scan Detected",
+      "severity": "medium",
+      "source_ip": "192.168.1.10",
+      "destination_ip": "192.168.1.20",
+      "description": "Possible port scan detected",
+      "mitre_attack": {
+        "technique_id": "T1046",
+        "technique_name": "Network Service Discovery",
+        "tactic": "Discovery"
+      },
+      "evidence": {
+        "unique_ports": 21,
+        "time_window_seconds": 60,
+        "threshold": 20
+      },
+      "threat_score": 60,
+      "risk_level": "medium"
+    },
+    {
+      "timestamp": "2024-06-10T12:00:30+00:00",
+      "alert_type": "MALICIOUS_DNS_QUERY",
+      "display_name": "Malicious DNS Query",
+      "severity": "high",
+      "source_ip": "192.168.1.30",
+      "destination_ip": "8.8.8.8",
+      "description": "DNS query matched malicious domain blocklist",
+      "mitre_attack": {
+        "technique_id": "T1071.004",
+        "technique_name": "Application Layer Protocol: DNS",
+        "tactic": "Command and Control"
+      },
+      "evidence": {
+        "domain": "bad-domain.test"
+      },
+      "threat_score": 100,
+      "risk_level": "critical"
+    },
+    {
+      "timestamp": "2024-06-10T12:00:44+00:00",
+      "alert_type": "REPEATED_LARGE_PACKETS",
+      "display_name": "Repeated Large Packet Transfer",
+      "severity": "low",
+      "source_ip": "192.168.1.50",
+      "destination_ip": "192.168.1.60",
+      "description": "Repeated unusually large packets detected",
+      "mitre_attack": {
+        "technique_id": "T1041",
+        "technique_name": "Exfiltration Over C2 Channel",
+        "tactic": "Exfiltration"
+      },
+      "evidence": {
+        "packet_count": 5,
+        "size_threshold": 1400,
+        "time_window_seconds": 60
+      },
+      "threat_score": 60,
+      "risk_level": "medium"
+    },
+    {
+      "timestamp": "2024-06-10T12:00:31+00:00",
+      "alert_type": "MALICIOUS_IP_COMMUNICATION",
+      "display_name": "Malicious IP Communication",
+      "severity": "high",
+      "source_ip": "192.168.1.40",
+      "destination_ip": "45.133.1.23",
+      "description": "Packet matched malicious IP blocklist",
+      "mitre_attack": {
+        "technique_id": "T1071",
+        "technique_name": "Application Layer Protocol",
+        "tactic": "Command and Control"
+      },
+      "evidence": {
+        "matched_ip": "45.133.1.23"
+      },
+      "threat_score": 100,
+      "risk_level": "critical"
+    },
+    {
+      "timestamp": "2024-06-10T12:00:21+00:00",
+      "alert_type": "SIGMA_RULE_MATCH",
+      "display_name": "Sigma Rule Match",
+      "severity": "medium",
+      "source_ip": "192.168.1.10",
+      "destination_ip": "192.168.1.20",
+      "description": "Detect traffic to common remote access ports",
+      "mitre_attack": {
+        "technique_id": "T1046",
+        "technique_name": "Network Service Discovery",
+        "tactic": "Discovery"
+      },
+      "evidence": {
+        "rule_title": "Remote Access Port Activity",
+        "rule_file": "rules\\sigma\\remote_access_ports.yml",
+        "rule_type": "sigma",
+        "detection": {
+          "destination_port": [
+            22,
+            3389
+          ]
+        }
+      },
+      "threat_score": 100,
+      "risk_level": "critical"
+    },
+    {
+      "timestamp": "2024-06-10T12:00:30+00:00",
+      "alert_type": "SIGMA_RULE_MATCH",
+      "display_name": "Sigma Rule Match",
+      "severity": "high",
+      "source_ip": "192.168.1.30",
+      "destination_ip": "8.8.8.8",
+      "description": "Detect DNS requests to known malicious domains",
+      "mitre_attack": {
+        "technique_id": "T1046",
+        "technique_name": "Network Service Discovery",
+        "tactic": "Discovery"
+      },
+      "evidence": {
+        "rule_title": "Suspicious DNS Activity",
+        "rule_file": "rules\\sigma\\suspicious_dns.yml",
+        "rule_type": "sigma",
+        "detection": {
+          "domain": [
+            "bad-domain.test",
+            "malicious-example.com",
+            "suspicious-c2.net"
+          ]
+        }
+      },
+      "threat_score": 100,
+      "risk_level": "critical"
+    },
+    {
+      "timestamp": "2024-06-10T12:00:31+00:00",
+      "alert_type": "SIGMA_RULE_MATCH",
+      "display_name": "Sigma Rule Match",
+      "severity": "high",
+      "source_ip": "192.168.1.40",
+      "destination_ip": "45.133.1.23",
+      "description": "Detect communication with known suspicious IP addresses",
+      "mitre_attack": {
+        "technique_id": "T1046",
+        "technique_name": "Network Service Discovery",
+        "tactic": "Discovery"
+      },
+      "evidence": {
+        "rule_title": "Threat IP Communication",
+        "rule_file": "rules\\sigma\\threat_ip.yml",
+        "rule_type": "sigma",
+        "detection": {
+          "destination_ip": [
+            "45.133.1.23",
+            "185.220.101.1",
+            "91.240.118.172"
+          ]
+        }
+      },
+      "threat_score": 100,
+      "risk_level": "critical"
+    }
+  ]
+}
