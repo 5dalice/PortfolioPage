@@ -305,9 +305,14 @@ export default function MiniIdsDashboardPage() {
             </p>
           </div>
 
-          <div className="w-fit rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-2 text-sm text-cyan-300">
-            Detection Platform Demo
-          </div>
+      <a
+       href="https://github.com/5dalice/Mini-Network-IDS-MVP"
+       target="_blank"
+       rel="noopener noreferrer"
+        className="w-fit rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-2 text-sm text-cyan-300 transition hover:border-cyan-300 hover:bg-cyan-400/20"
+>
+          🔍 Explore Demo · View Source Code
+            </a>
         </header>
 
         <section className="mb-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-6">
