@@ -69,8 +69,43 @@ export const portfolioData: SearchResult[] = [
   },
 
   // Projects
-  // Projects
-{
+  {
+    id: "proj-5",
+    title: "IP Intelligence",
+    url: "https://ip-intelligence.vercel.app",
+    href: "https://ip-intelligence.vercel.app",
+    description:
+      "A network intelligence application for investigating public IPv4 and IPv6 addresses. It combines geolocation, ASN and ownership data, RDAP registration, reverse DNS, security signals, explainable risk scoring, and evidence-oriented network analysis.",
+    category: "projects",
+  },
+  {
+    id: "proj-4",
+    title: "Astrology Page",
+    url: "https://github.com/5dalice/myFirstAstroPage",
+    href: "https://github.com/5dalice/myFirstAstroPage",
+    description:
+      "An astrology web application built with ASP.NET Core MVC, C#, SQLite, HTML and CSS. The project includes horoscope functionality, database integration and responsive user interface design.",
+    category: "projects",
+  },
+  {
+    id: "proj-3",
+    title: "Weather App - Real-Time Weather Dashboard",
+    url: "aliceewaldsen.com/projects/weather-app",
+    href: "/projects/weather-app",
+    description:
+      "A weather application that fetches real-time weather data from a free public API. The project includes city-based search, current temperature, humidity, wind speed, and a responsive interface built with React, TypeScript, and Next.js.",
+    category: "projects",
+  },
+  {
+    id: "proj-2",
+    title: "Portfolio Page",
+    url: "https://github.com/5dalice/PortfolioPage",
+    href: "https://github.com/5dalice/PortfolioPage",
+    description:
+      "A developer portfolio page built with React, TypeScript and Next.js. The project features component-based architecture, dynamic project rendering, responsive layouts, client-side navigation and optimized performance through modern frontend development practices.",
+    category: "projects",
+  },
+  {
   id: "proj-1",
   title: "Mini Network IDS MVP",
   url: "/projects/mini-ids",
@@ -86,33 +121,6 @@ export const portfolioData: SearchResult[] = [
     href: "https://github.com/5dalice/PortfolioPage",
     description:
       "A developer portfolio page built with React, TypeScript and Next.js. The project features component-based architecture, dynamic project rendering, responsive layouts, client-side navigation and optimized performance through modern frontend development practices.",
-    category: "projects",
-  },
-  {
-    id: "proj-5",
-    title: "IP Intelligence",
-    url: "https://ip-intelligence.vercel.app",
-    href: "https://ip-intelligence.vercel.app",
-    description:
-      "A network intelligence application for investigating public IPv4 and IPv6 addresses. It combines geolocation, ASN and ownership data, RDAP registration, reverse DNS, security signals, explainable risk scoring, and evidence-oriented network analysis.",
-    category: "projects",
-  },
-  {
-    id: "proj-3",
-    title: "Weather App - Real-Time Weather Dashboard",
-    url: "aliceewaldsen.com/projects/weather-app",
-    href: "/projects/weather-app",
-    description:
-      "A weather application that fetches real-time weather data from a free public API. The project includes city-based search, current temperature, humidity, wind speed, and a responsive interface built with React, TypeScript, and Next.js.",
-    category: "projects",
-  },
-  {
-    id: "proj-4",
-    title: "Astrology Page",
-    url: "https://github.com/5dalice/myFirstAstroPage",
-    href: "https://github.com/5dalice/myFirstAstroPage",
-    description:
-      "An astrology web application built with ASP.NET Core MVC, C#, SQLite, HTML and CSS. The project includes horoscope functionality, database integration and responsive user interface design.",
     category: "projects",
   },
   // Writing
