@@ -36,13 +36,12 @@ export const portfolioData: SearchResult[] = [
 
   // Experience
   {
-    id: "work-0",
-    title: "404: Employer Not Found (2026–?)",
-    url: "aliceewaldsen.com/contact",
-    href: "mailto:alice.ewaldsen@hotmail.com",
-    description:
-      "The requested employer could not be found. If you are hiring a software developer with a master's degree in cybersecurity, please try again via the Contact section.",
-    category: "experience",
+  id: "work-0",
+  title: "Founder & Web Developer – Freelance Web Development (2026–Present)",
+  href: "mailto:alice.ewaldsen@hotmail.com",
+  description:
+    "I design and develop modern, professional websites tailored to your business and goals. From design and functionality to a fully deployed website, I handle the entire process and focus on creating a fast, responsive, and user-friendly online presence that represents your brand. Looking for a new website or want to improve your existing one? Contact me for a quote.",
+  category: "experience",
   },
   {
     id: "work-1",
