@@ -79,6 +79,15 @@ export const portfolioData: SearchResult[] = [
     category: "projects",
   },
   {
+  id: "proj-1",
+  title: "Mini Network IDS MVP",
+  url: "/projects/mini-ids",
+  href: "/projects/mini-ids",
+  description:
+    "A Python-based network detection platform featuring PCAP analysis, Sigma rules, MITRE ATT&CK mapping, threat scoring, incident correlation, and a web dashboard.",
+  category: "projects",
+},
+  {
     id: "proj-4",
     title: "Astrology Page",
     url: "https://github.com/5dalice/myFirstAstroPage",
@@ -96,24 +105,6 @@ export const portfolioData: SearchResult[] = [
       "A weather application that fetches real-time weather data from a free public API. The project includes city-based search, current temperature, humidity, wind speed, and a responsive interface built with React, TypeScript, and Next.js.",
     category: "projects",
   },
-  {
-    id: "proj-2",
-    title: "Portfolio Page",
-    url: "https://github.com/5dalice/PortfolioPage",
-    href: "https://github.com/5dalice/PortfolioPage",
-    description:
-      "A developer portfolio page built with React, TypeScript and Next.js. The project features component-based architecture, dynamic project rendering, responsive layouts, client-side navigation and optimized performance through modern frontend development practices.",
-    category: "projects",
-  },
-  {
-  id: "proj-1",
-  title: "Mini Network IDS MVP",
-  url: "/projects/mini-ids",
-  href: "/projects/mini-ids",
-  description:
-    "A Python-based network detection platform featuring PCAP analysis, Sigma rules, MITRE ATT&CK mapping, threat scoring, incident correlation, and a web dashboard.",
-  category: "projects",
-},
   {
     id: "proj-2",
     title: "Portfolio Page",
