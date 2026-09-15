@@ -72,8 +72,8 @@ export const portfolioData: SearchResult[] = [
   {
     id: "proj-5",
     title: "IP Intelligence",
-    url: "https://ip-intelligence.vercel.app",
-    href: "https://ip-intelligence.vercel.app",
+    url: "https://ip-intelligence-phjidadu4-5dalices-projects.vercel.app",
+    href: "https://ip-intelligence-phjidadu4-5dalices-projects.vercel.app",
     description:
       "A network intelligence application for investigating public IPv4 and IPv6 addresses. It combines geolocation, ASN and ownership data, RDAP registration, reverse DNS, security signals, explainable risk scoring, and evidence-oriented network analysis.",
     category: "projects",
